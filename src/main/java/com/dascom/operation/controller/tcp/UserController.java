@@ -21,6 +21,7 @@ import com.dascom.operation.utils.ResultVOUtil;
 import com.dascom.operation.vo.ResultVO;
 
 @RestController
+@RequestMapping(value="/tcp")
 public class UserController {
 	
 	private static final Logger logger = LogManager.getLogger(UserController.class);
@@ -34,7 +35,7 @@ public class UserController {
 	@Autowired
 	private RedisService redisService;
 	
-	@RequestMapping(value="writeUser", method=RequestMethod.POST,produces="application/json;charset=utf-8")
+	@RequestMapping(value="/writeUser", method=RequestMethod.POST,produces="application/json;charset=utf-8")
 	public ResultVO writeUser(@RequestBody JSONObject json,HttpServletResponse response) {
 		String number = null;
 		String data = null;
@@ -47,16 +48,19 @@ public class UserController {
 			
 			if(StringUtils.isEmpty(number) || StringUtils.isEmpty(data)) {
 				response.setStatus(HttpServletResponse.SC_FORBIDDEN);
+				logger.info("----参数错误----");
 				return ResultVOUtil.error(1301, "参数错误");
 			}
 			byte[] bytesData = data.getBytes(tcpUserMessageEncode);
 
 			if(bytesData.length>3583) {
 				response.setStatus(HttpServletResponse.SC_FORBIDDEN);
+				logger.info("----写入wifi的用户信息过大----");
 				return ResultVOUtil.error(1323, "写入wifi的用户信息过大");
 			}
 			if(redisService.getAndSet(number)) {
 				response.setStatus(HttpServletResponse.SC_FORBIDDEN);
+				logger.info("----设备被占用----");
 				return ResultVOUtil.error(1303, "设备被占用");
 			}
 			
@@ -67,6 +71,7 @@ public class UserController {
 		} catch (Exception e) {
 			logger.error(e.toString());
 			response.setStatus(HttpServletResponse.SC_FORBIDDEN);
+			logger.info("----服务器内部错误---- {}",e.toString());
 			return ResultVOUtil.error(1300, "服务器内部错误");
 		}finally {
 			redisService.delUsing(number);

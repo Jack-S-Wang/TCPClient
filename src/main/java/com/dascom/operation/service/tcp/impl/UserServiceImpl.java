@@ -54,7 +54,6 @@ public class UserServiceImpl implements UserService{
 		}
 		logger.info("----写入用户数据成功----");
 		return ResultVOUtil.success();
-		
 	}
 
 }

@@ -42,6 +42,7 @@ public class DeviceServiceImpl implements DeviceService{
 		String data = obj.getString("data");
 		byte[] message = BytesHexStrTranslate.hexToByteArray(data);
 		if(message.length <= 20+4+8) {
+			logger.info("----读取wifi配置失败----");
 			return ResultVOUtil.error(1312, "读取wifi配置失败");
 		}else {
 			WifiConfig wifiConfig = AnalyseMessage.getWifiConfig(message, 20+4+8);
@@ -80,6 +81,7 @@ public class DeviceServiceImpl implements DeviceService{
 		if(result.get(2).equals("00")&&result.get(3).equals("00")) {
 			logger.info("----设备重启成功----");
 		}else {
+			logger.info("----设备重启失败----");
 			ResultVOUtil.error(1302, "设备重启失败");
 		}
 		return ResultVOUtil.success();

@@ -1,2 +1,1 @@
-2018-09-26 09:36:00 ERROR [TcpHttpUtils.java:64] - ----调用IO错误----[Ljava.lang.StackTraceElement;@1e2acb4f
-2018-09-26 09:37:40 ERROR [TcpHttpUtils.java:64] - ----调用IO错误----[Ljava.lang.StackTraceElement;@51f47951
+2018-09-28 16:02:33 ERROR [UserController.java:68] - java.lang.NullPointerException

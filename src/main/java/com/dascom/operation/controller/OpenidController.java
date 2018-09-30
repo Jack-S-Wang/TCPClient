@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.dascom.operation.service.OpenidStatisticsService;
 
 @RestController
+@RequestMapping("/statistics")
 public class OpenidController {
 	
 	@Autowired

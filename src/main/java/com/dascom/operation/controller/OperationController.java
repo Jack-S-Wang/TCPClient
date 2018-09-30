@@ -28,6 +28,7 @@ import com.dascom.operation.vo.ResultVO;
 
 
 @RestController
+@RequestMapping("/statistics")
 public class OperationController {
 	
 	private static final Logger logger = LogManager.getLogger(OperationController.class);

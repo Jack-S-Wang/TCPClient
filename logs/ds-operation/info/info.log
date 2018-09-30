@@ -1,10 +1,58 @@
-2018-09-26 14:13:03 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-26 14:13:03 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
-2018-09-26 14:13:03 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-26 14:13:03 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-26 14:13:07 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-26 14:13:07 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
-2018-09-26 14:13:07 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-26 14:13:07 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-26 14:13:07 INFO [DeviceServiceImpl.java:48] - ----读取wifi配置成功----WifiConfig [localIpAddress=192.168.1.10, localSubnetMask=255.255.255.0, localGateway=192.168.1.10, remoteServerAddress=192.168.11.151, mainDNSServerAddress=114.114.114.114, slaveDNSServerAddress=114.114.114.115, udpPort=20000, controlPort=20001, dataPort=20002, remoteRouteSsid=TP123, remoteRoutePassword=123456789, dhcp=1, reconnectionInterval=3, apModelSsid=AisinoCloudPrinter, apModelPassword=1234567890, networkMode=0, dataTransmissionSpeed=3, networkChannel=6, dns=0, deviceModel=1, domainName=yun.dascomyun.cn]
-2018-09-26 14:13:07 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-28 16:02:28 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-28 16:02:28 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice/0045BE7350027800
+2018-09-28 16:02:28 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-28 16:02:28 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-28 16:02:29 INFO [DeviceServiceImpl.java:48] - ----读取wifi配置成功----WifiConfig [localIpAddress=192.168.1.10, localSubnetMask=255.255.255.0, localGateway=192.168.1.10, remoteServerAddress=192.168.11.163, mainDNSServerAddress=114.114.114.114, slaveDNSServerAddress=114.114.114.115, udpPort=20000, controlPort=20001, dataPort=20002, remoteRouteSsid=TP123, remoteRoutePassword=123456789, dhcp=1, reconnectionInterval=40, apModelSsid=dsyunwifi789, apModelPassword=1234567890, networkMode=0, dataTransmissionSpeed=2, networkChannel=5, dns=0, deviceModel=1, domainName=yun.dascomyun.cn]
+2018-09-28 16:02:29 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-28 16:02:33 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-28 16:02:33 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/writeUser
+2018-09-28 16:02:33 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-28 16:02:33 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-28 16:02:33 INFO [UserServiceImpl.java:46] - ----设备将完成用户数据的读写初始化,进入等待用户数据的读/写操作状态----
+2018-09-28 16:02:33 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-28 16:03:22 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-28 16:03:22 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/writeUser
+2018-09-28 16:03:22 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-28 16:03:22 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-28 16:03:27 INFO [UserServiceImpl.java:46] - ----设备将完成用户数据的读写初始化,进入等待用户数据的读/写操作状态----
+2018-09-28 16:03:28 INFO [UserServiceImpl.java:55] - ----写入用户数据成功----
+2018-09-28 16:05:17 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-28 16:05:17 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/writeUser
+2018-09-28 16:05:17 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-28 16:05:17 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-28 16:05:22 INFO [UserServiceImpl.java:46] - ----设备将完成用户数据的读写初始化,进入等待用户数据的读/写操作状态----
+2018-09-28 16:05:23 INFO [UserServiceImpl.java:55] - ----写入用户数据成功----
+2018-09-28 16:05:23 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-28 16:05:37 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-28 16:05:37 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/writeUser
+2018-09-28 16:05:37 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-28 16:05:37 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-28 16:05:42 INFO [UserServiceImpl.java:46] - ----设备将完成用户数据的读写初始化,进入等待用户数据的读/写操作状态----
+2018-09-28 16:05:42 INFO [UserServiceImpl.java:55] - ----写入用户数据成功----
+2018-09-28 16:05:42 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-28 16:30:38 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-28 16:30:38 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/tcp/writeUser
+2018-09-28 16:30:38 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-28 16:30:38 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-28 16:30:43 INFO [UserServiceImpl.java:46] - ----设备将完成用户数据的读写初始化,进入等待用户数据的读/写操作状态----
+2018-09-28 16:30:44 INFO [UserServiceImpl.java:55] - ----写入用户数据成功----
+2018-09-28 16:30:44 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-28 16:31:21 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-28 16:31:21 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/tcp/restartDevice/0045BE7350027800
+2018-09-28 16:31:21 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-28 16:31:21 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-28 16:31:22 INFO [DeviceServiceImpl.java:82] - ----设备重启成功----
+2018-09-28 16:31:22 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-28 16:31:51 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-28 16:31:51 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/tcp/writeUser
+2018-09-28 16:31:51 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-28 16:31:51 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-28 16:31:56 INFO [UserServiceImpl.java:46] - ----设备将完成用户数据的读写初始化,进入等待用户数据的读/写操作状态----
+2018-09-28 16:31:57 INFO [UserServiceImpl.java:55] - ----写入用户数据成功----
+2018-09-28 16:31:57 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-28 16:32:02 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-28 16:32:02 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/tcp/restartDevice/0045BE7350027800
+2018-09-28 16:32:02 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-28 16:32:02 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-28 16:32:03 INFO [DeviceServiceImpl.java:82] - ----设备重启成功----
+2018-09-28 16:32:03 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
