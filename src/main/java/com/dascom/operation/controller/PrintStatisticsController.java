@@ -12,7 +12,6 @@ import com.dascom.operation.entity.PrintStatistics;
 import com.dascom.operation.service.PrintStatisticeService;
 
 @RestController
-@RequestMapping("/statistics")
 public class PrintStatisticsController {
 	
 	@Autowired

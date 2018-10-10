@@ -21,7 +21,6 @@ import com.dascom.operation.service.ActiveStateService;
 import com.dascom.operation.utils.FormatDate;
 
 @RestController
-@RequestMapping("/statistics")
 public class ActiveStateController {
 	
 	@Autowired

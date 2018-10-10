@@ -91,6 +91,7 @@ public class HttpClientUtils {
 			HttpEntity entity = response.getEntity();
 			String resultLine = EntityUtils.toString(entity, "UTF-8");
 			resultMap.put("resultLine", resultLine);
+			resultMap.put("requestUrl", url);
 		} catch (Exception e) {
 			logger.info(e);
 		} finally {
@@ -137,6 +138,7 @@ public class HttpClientUtils {
 
 			String resultLine = EntityUtils.toString(entity, "UTF-8");
 			resultMap.put("resultLine", resultLine);
+			resultMap.put("requestUrl", url);
 		} catch (Exception e) {
 			logger.info(e);
 		} finally {
@@ -185,6 +187,7 @@ public class HttpClientUtils {
 				resultLine = EntityUtils.toString(response.getEntity(), "UTF-8");
 			}
 			resultMap.put("resultLine", resultLine);
+			resultMap.put("requestUrl", url);
 
 		} catch (Exception e) {
 			logger.info(e);
@@ -234,6 +237,7 @@ public class HttpClientUtils {
 				resultLine = EntityUtils.toString(response.getEntity(), "UTF-8");
 			}
 			resultMap.put("resultLine", resultLine);
+			resultMap.put("requestUrl", url);
 
 		} catch (Exception e) {
 			logger.info(e);

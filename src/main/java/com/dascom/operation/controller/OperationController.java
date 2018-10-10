@@ -28,7 +28,6 @@ import com.dascom.operation.vo.ResultVO;
 
 
 @RestController
-@RequestMapping("/statistics")
 public class OperationController {
 	
 	private static final Logger logger = LogManager.getLogger(OperationController.class);
@@ -89,7 +88,6 @@ public class OperationController {
 				if(resultCode>=400) {
 					String requestUrl = interMap.get("requestUrl");
 					String resultLine = resultRedis.get("resultLine").toString();
-					
 					logger.info("----接口报错：发送钉钉报警----");
 					HttpClientUtils.sendDingding(dingdingUrl,resultRedis, requestUrl);
 					logger.info("----错误接口地址----"+requestUrl);

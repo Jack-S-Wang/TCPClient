@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.dascom.operation</groupId>
-	<artifactId>e-invoice-operation-backstage</artifactId>
-	<version>v0.0.0.3_1</version>
+	<artifactId>EInvoiceOperation-Backstage </artifactId>
+	<version>v1.0.0.1</version>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -106,24 +106,24 @@
 	</dependencies>
 
 	<build>
-
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 
-
 			<plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>1.1.1</version>   <!-- docker插件版本 -->
 				<configuration>
-					
+					<buildArgs>
+						<JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
+					</buildArgs>
 					<imageName>120.197.55.79:15000/${project.artifactId}:${project.version}</imageName>
 					<!-- <baseImage>java:8-jre-alpine</baseImage> -->   <!-- 基础镜像 -->
 					<!-- <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint> -->
-					<dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
+					<dockerDirectory>src/main/docker</dockerDirectory>
 					<resources>
 						<resource>
 							<targetPath>/root</targetPath>

@@ -34,7 +34,7 @@ public class SubStringResult {
 	}
 	
 	public String getBase64() {
-		String path = "C:\\Users\\ds-1233\\Desktop\\uw11_w_release6.21.ota";
+		String path = "C:\\Users\\ds-1233\\Desktop\\uw11_w_releaseC.ota";
 		String base64 = null;
         InputStream in = null;
         try {

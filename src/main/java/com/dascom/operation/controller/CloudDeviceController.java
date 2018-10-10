@@ -13,7 +13,6 @@ import com.dascom.operation.entity.CollectionPrinterActiveStatistics;
 import com.dascom.operation.service.CollectionPrintersService;
 
 @RestController
-@RequestMapping("/statistics")
 public class CloudDeviceController {
 	
 	@Autowired

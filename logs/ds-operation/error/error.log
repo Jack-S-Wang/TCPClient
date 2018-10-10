@@ -1,1 +1,3 @@
-2018-09-28 16:02:33 ERROR [UserController.java:68] - java.lang.NullPointerException
+2018-10-10 10:04:04 ERROR [UpdateWifeServiceImpl.java:47] - 进入固件升级模式失败,当前模式D0值:01
+2018-10-10 10:22:13 ERROR [UpdateWifeServiceImpl.java:47] - 进入固件升级模式失败,当前模式D0值:01
+2018-10-10 10:34:36 ERROR [UpdateWifeServiceImpl.java:47] - 进入固件升级模式失败,当前模式D0值:01
